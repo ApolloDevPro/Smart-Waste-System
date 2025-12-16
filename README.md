@@ -2,17 +2,8 @@ MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY
 FACULTY OF COMPUTING AND INFORMATICS
 BACHELOR DEGREE OF COMPUTER SCIENCE
 COURSE UNIT: WEB PROGRAMING
-GROUPNAME: GROUP NINE
 
-WATMON DERICK             2024/BCS/010
-EGWANG EMMANUEL           2024/BCS/003
-WASUKIRA RONNIE           2024/BCS/169/PS 
-MUSASIRE T KENNETH        2024/BCS/115/PS
-TURYAHEBWA APOLLO         2024/BCS/164/PS
-OGWAL HOSBON              2024/BCS/007
-KAMUKAMA JORAM JOTHAM     2024/BCS/074/PS
-KAMUGISHA JUNIOUR         2024/BCS/072/PS
-OGUTI GAD JOEL            2024/BCS/230/PS
+
 
 WASTE MANAGEMENT SYSTEM
 
@@ -122,54 +113,6 @@ Backend:    PHP
 Database:   MySQL (waste_management_system.sql)  
 Server:     Apache (XAMPP )
 
- Project Directory Layout
-
-waste_management_system/
-│
-├── db_connect.php             → Database connection file
-├── index.php                  → Main login page
-├── register.php               → User registration page
-├── logout.php                 → Logout handler
-│
-├── assets/
-│   ├── css/
-│   │   └── style.css          → Styling for all pages
-│   ├── js/
-│   │   └── script.js          → Optional frontend logic
-│   └── images/                → Images, icons, and assets
-│
-├── admin/
-│   ├── dashboard.php          → Admin control panel
-│   ├── manage_users.php       → Manage user accounts
-│   ├── manage_requests.php    → Approve or reject requests
-│   ├── manage_staff.php       → Add and manage staff
-│   ├── manage_trucks.php      → Add and manage trucks
-│   ├── generate_reports.php   → Generate system reports
-│   └── view_feedback.php      → Review user feedback
-│
-├── staff/
-│   ├── dashboard.php          → Staff dashboard
-│   ├── assigned_requests.php  → View assigned requests
-│   ├── update_status.php      → Update collection progress
-│   └── view_schedule.php      → View collection schedule
-│
-├── user/
-│   ├── dashboard.php          → User dashboard
-│   ├── request_waste.php      → Submit new waste request
-│   ├── view_requests.php      → Track request status
-│   ├── make_payment.php       → Make payments
-│   ├── give_feedback.php      → Submit feedback
-│   └── view_schedule.php      → View collection days
-│
-├── includes/
-│   ├── header.php             → Common header file
-│   ├── footer.php             → Common footer file
-│   └── auth_check.php         → Session role validation
-│
-├── sql/
-│   └── waste_management_schema.sql  → Database schema
-│
-└── README.txt                 → Project documentation
 
 
 SYSTEM MODULES
@@ -241,7 +184,7 @@ SETUP INSTRUCTIONS
 2. Open phpMyAdmin → Import `waste_management_schema.sql`.
 3. Configure database credentials in `db_connect.php`.
 4. Run the system in your browser:
-   http://localhost/waste_management_system/
+   http://localhost/waste system /
 5. Log in using the default admin or staff credentials.
 
 FUTURE IMPROVEMENTS
@@ -254,5 +197,5 @@ FUTURE IMPROVEMENTS
 
 
 
- AUTHORS: [Group9]
+ AUTHORS: [Apollodevpro.]
 
