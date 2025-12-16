@@ -1,0 +1,151 @@
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #0A9225FF;
+  border-bottom: 1px solid #ddd;
+}
+.admin-info {
+  font-weight: bold;
+  color: #fff;
+}
+.dashboard-clock {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.stat-card h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+.stat-card p {
+  margin: 0.5rem 0 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+.stat-pending {
+  border-left: 4px solid #ffc107;
+}
+.stat-approved {
+  border-left: 4px solid #28a745;
+}
+.stat-progress {
+  border-left: 4px solid #007bff;
+}
+.stat-collected {
+  border-left: 4px solid #6c757d;
+}
+.stat-rejected {
+  border-left: 4px solid #dc3545;
+}
+.filters {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filters select,
+.filters input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.filters button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filters button:hover {
+  background: #0056b3;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #38328FFF;
+  color: white;
+  font-weight: 600;
+}
+tr:hover {
+  background: #f8f9fa;
+}
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.status-Pending {
+  background: #fff3cd;
+  color: #856404;
+}
+.status-Approved {
+  background: #d4edda;
+  color: #155724;
+}
+.status-In.Progress {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+.status-Collected {
+  background: #d6d8db;
+  color: #383d41;
+}
+.status-Rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+.status-Canceled {
+  background: #e2e3e5;
+  color: #383d41;
+}
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+.btn {
+  background: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background: #218838;
+}

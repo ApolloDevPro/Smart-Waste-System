@@ -1,0 +1,124 @@
+/* Table Controls Styles */
+.table-controls {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 250px;
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(30, 86, 49, 0.1);
+}
+
+.filter-controls {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: white;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    min-width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(30, 86, 49, 0.1);
+}
+
+/* Sortable Table Styles */
+.sortable th[data-sortable] {
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.sortable th[data-sortable] i {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    font-size: 0.8rem;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.sortable th[data-sortable]:hover i {
+    opacity: 1;
+}
+
+.sortable th.sort-asc i {
+    opacity: 1;
+    transform: translateY(-50%) rotate(180deg);
+    color: var(--primary-color);
+}
+
+.sortable th.sort-desc i {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+/* Table Row Transitions */
+.data-table tbody tr {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.data-table tbody tr:hover {
+    background-color: rgba(30, 86, 49, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .table-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .filter-controls {
+        width: 100%;
+    }
+
+    .filter-select {
+        flex: 1;
+    }
+}
